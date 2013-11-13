@@ -23,12 +23,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    vocalizer = [EBVocalizerFactory initVocalizerWithService:EBGoogleVocalizerService language:@"en-US" delegate:self];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)stopRecord:(id)sender {
+    [recognizer stopRecording];
 }
 
 - (IBAction)startRecord:(id)sender {
@@ -44,6 +48,8 @@
 }
 - (void)ebrecognizer:(id<EBRecognizer>)recognizer didFinishWithResults:(EBRecognition *)results{
     NSLog(@"%@",results.results);
+    
+    [vocalizer speakString:@"Lineker, I love you"];
 }
 - (void)ebrecognizer:(id<EBRecognizer>)recognizer didFinishWithError:(NSError *)error suggestion:(NSString *)suggestion {
     NSLog(@"something went wrong");

@@ -2,7 +2,7 @@
 //  EBSpeech.h
 //  EBSpeech
 //
-//  Created by Lineker_IBM on 2013-07-15.
+//  Created by Lineker_ on 2013-07-15.
 //  Copyright (c) 2013 eb. All rights reserved.
 //
 

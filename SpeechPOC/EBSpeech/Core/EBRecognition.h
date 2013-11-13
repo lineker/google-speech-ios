@@ -2,7 +2,7 @@
 //  EBRecognition.h
 //  EBSpeech
 //
-//  Created by Lineker_IBM on 2013-07-16.
+//  Created by Lineker_ on 2013-07-16.
 //  Copyright (c) 2013 eb. All rights reserved.
 //
 
